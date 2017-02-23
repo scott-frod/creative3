@@ -1,0 +1,43 @@
+.GIF
+{
+    width: 500px;
+    height: 500px;
+}
+#giftext
+{
+    text-align: center;
+}
+
+#GIFone
+{
+    position: absolute;
+    transform: translateX(40%) translateY(+5%);
+}
+
+#GIFtwo
+{
+    position: absolute;
+    transform: translateX(150%) translateY(+5%)
+    
+}
+
+#inputdata
+{
+    margin: auto;
+    width: 50%;
+    border: 3px solid cyan;
+    padding: 10px;
+}
+
+#attribution
+{
+    position: absolute;
+    transform: translateX(0%) translateY(+1300%);
+    width: 200px;
+    height: auto;
+}
+
+body
+{
+    background-color: rgb(111, 113, 117);
+}

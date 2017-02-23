@@ -9,14 +9,19 @@
   </head>
   <body>
     <div ng-controller="FirstController">
-      <span>Search by subject:</span>
-      <input type="text" ng-model="Subject">
-      <button ng-click='StartBattle()'>Start the Battle!</button>
-        <div id="GIFone"></div>
-            <img src={{gifone}}>
-        <div id="GIFtwo"></div>
-            <img src={{giftwo}}>
+        <div id=inputdata>
+            <span>Search by subject:</span>
+            <input type="text" ng-model="Subject">
+            <button ng-click='StartBattle()'>Start the Battle!</button>
+        </div>
+        <p id=giftext>Which gif will you pick? Click on the gif to make the choice!</p>
+        <div id="GIFone" ng-click='PickOne()'>
+            <img src={{gifone}} class="GIF">
+        </div>
+        <div id="GIFtwo" ng-click='PickTwo()'>
+            <img src={{giftwo}} class="GIF">
+        </div>
     </div>
-      <img src="img/GIPHY%20Attribute.gif?5">
+      <img id='attribution' src="img/GIPHY%20Attribute.gif?5">
   </body>
 </html>
