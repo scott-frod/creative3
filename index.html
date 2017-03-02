@@ -5,7 +5,7 @@
       <link rel="icon" href="http://rs253.pbsrc.com/albums/hh44/Gavener_Purl/poptart1red1.gif~c200">
       <link rel="stylesheet" href="main.css">
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-      <script src="Giphyapi.js"></script>
+      <script src="Giphyapi.js?39"></script>
   </head>
   <body>
     <div ng-controller="FirstController">
@@ -14,7 +14,7 @@
             <input type="text" ng-model="Subject">
             <button ng-click='StartBattle()'>Start the Battle!</button>
         </div>
-        <p id=giftext>Which gif will you pick? Click on the gif to make the choice!</p>
+        <p id=giftext ng-model="giftext">Which gif will you pick? Click on the gif to make the choice!</p>
         <div id="GIFone" ng-click='PickOne()'>
             <img src={{gifone}} class="GIF">
         </div>
